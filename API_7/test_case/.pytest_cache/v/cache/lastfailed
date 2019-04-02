@@ -1,0 +1,18 @@
+{
+  "test_addload.py::TestApi::test_001_3": true,
+  "test_addload.py::TestApi::test_001_4": true,
+  "test_addload.py::TestApi::test_001_5": true,
+  "test_addload.py::TestApi::test_001_6": true,
+  "test_addload.py::TestApi::test_001_7": true,
+  "test_addloan.py::TestApi::test_001_4": true,
+  "test_addloan.py::TestApi::test_001_5": true,
+  "test_addloan.py::TestApi::test_001_6": true,
+  "test_api.py::TestApi::test_001_1": true,
+  "test_api.py::TestApi::test_004_1": true,
+  "test_api_another.py::TestApi::test_001_01": true,
+  "test_recharge.py::TestApi::test_002_02": true,
+  "test_recharge.py::TestApi::test_002_03": true,
+  "test_recharge.py::TestApi::test_002_04": true,
+  "test_register.py::TestApi": true,
+  "test_withdraw.py::TestApi::test_002_2": true
+}

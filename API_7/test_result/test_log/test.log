@@ -1,0 +1,651 @@
+2019-03-22 17:49:05,182-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-22 17:49:05,192-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-22 17:49:05,192-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-22 17:49:05,297-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-22 17:49:05,918-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-22 17:49:05,918-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-22 17:49:05,939-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-22 17:49:05,944-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-22 17:49:05,949-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-22 17:49:06,326-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是10300.00
+2019-03-22 17:49:06,739-INFO-input_log.py-mylogger-37行-日志信息:recharge模块第2条用例正常充值测试通过
+2019-03-22 17:49:07,394-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': {'id': 1123931, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '18688777612', 'leaveamount': '10300.00', 'type': '1', 'regtime': '2019-03-12 11:58:09.0'}, 'msg': '充值成功'}
+2019-03-22 17:49:07,394-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-22 17:49:20,559-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-22 17:49:20,575-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-22 17:49:20,579-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-22 17:49:20,685-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-22 17:49:21,350-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-22 17:49:21,354-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-22 17:49:21,361-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-22 17:49:21,371-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第2条测试用例:投资成功---
+2019-03-22 17:49:21,371-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'invest', 'Title': '投资成功', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'1123931','password':'123456','loanId':'18078','amount':'100.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612','sql_1':'SELECT MAX(Id),Amount from invest where MemberID = 1123931 and LoanId = 18078'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'竞标成功'}"}
+2019-03-22 17:49:21,658-INFO-input_log.py-mylogger-37行-日志信息:投资之前用户可用余额是10300.00
+2019-03-22 17:49:22,023-INFO-input_log.py-mylogger-37行-日志信息:投资之后用户可用余额是10200.00
+2019-03-22 17:49:22,844-INFO-input_log.py-mylogger-37行-日志信息:invest模块第2条用例投资成功测试通过
+2019-03-22 17:49:23,662-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+2019-03-22 17:49:23,666-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-22 17:49:23,683-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-22 17:49:23,689-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第3条测试用例:不输入金额投资---
+2019-03-22 17:49:23,693-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'invest', 'Title': '不输入金额投资', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'1123931','password':'123456','loanId':'18078','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data':None, 'msg':'参数错误:所有参数都不能为空'}"}
+2019-03-22 17:49:23,769-INFO-input_log.py-mylogger-37行-日志信息:invest模块第3条用例不输入金额投资测试通过
+2019-03-22 17:49:24,301-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+2019-03-22 17:49:24,301-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:35:13,470-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:35:13,510-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 14:35:13,510-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 14:35:13,620-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-25 14:35:14,040-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 14:35:14,040-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:35:14,050-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:35:14,060-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第2条测试用例:投资成功---
+2019-03-25 14:35:14,060-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'invest', 'Title': '投资成功', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'1123931','password':'123456','loanId':'loan_id','amount':'100.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612','sql_1':'select max(Id) from loan where MemberID = 1123931','sql_2':'SELECT MAX(Id),Amount from invest where MemberID = 1123931 and LoanId = loan_id'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'竞标成功'}"}
+2019-03-25 14:35:14,660-INFO-input_log.py-mylogger-37行-日志信息:投资之前用户可用余额是10200.00
+2019-03-25 14:35:15,070-INFO-input_log.py-mylogger-37行-日志信息:投资之后用户可用余额是10100.00
+2019-03-25 14:35:15,750-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:35:16,550-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:35:16,550-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第3条测试用例:不输入金额投资---
+2019-03-25 14:35:16,560-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'invest', 'Title': '不输入金额投资', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'1123931','password':'123456','loanId':'loan_id','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data':None, 'msg':'参数错误:所有参数都不能为空'}"}
+2019-03-25 14:35:16,640-INFO-input_log.py-mylogger-37行-日志信息:invest模块第3条用例不输入金额投资测试通过
+2019-03-25 14:35:17,094-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+2019-03-25 14:35:17,094-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:39:40,522-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:39:40,522-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 14:39:40,522-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 14:39:40,612-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-25 14:39:40,722-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:39:41,472-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:39:41,482-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第2条测试用例:投资成功---
+2019-03-25 14:39:41,482-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'invest', 'Title': '投资成功', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'1123931','password':'123456','loanId':'loan_id','amount':'100.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612','sql_1':'select max(Id) from loan where MemberID = 1123931','sql_2':'SELECT MAX(Id),Amount from invest where MemberID = 1123931 and LoanId = loan_id'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'竞标成功'}"}
+2019-03-25 14:39:42,072-INFO-input_log.py-mylogger-37行-日志信息:投资之前用户可用余额是10100.00
+2019-03-25 14:39:42,482-INFO-input_log.py-mylogger-37行-日志信息:投资之后用户可用余额是10000.00
+2019-03-25 14:39:43,011-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:39:43,588-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:39:43,588-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第3条测试用例:不输入金额投资---
+2019-03-25 14:39:43,588-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'invest', 'Title': '不输入金额投资', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'1123931','password':'123456','loanId':'loan_id','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data':None, 'msg':'参数错误:所有参数都不能为空'}"}
+2019-03-25 14:39:43,668-INFO-input_log.py-mylogger-37行-日志信息:invest模块第3条用例不输入金额投资测试通过
+2019-03-25 14:39:43,808-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:39:55,465-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:39:55,465-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 14:39:55,465-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 14:39:55,555-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-25 14:39:55,965-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 14:39:55,975-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:39:55,975-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:39:55,975-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第2条测试用例:投资成功---
+2019-03-25 14:39:55,985-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'invest', 'Title': '投资成功', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'1123931','password':'123456','loanId':'loan_id','amount':'100.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612','sql_1':'select max(Id) from loan where MemberID = 1123931','sql_2':'SELECT MAX(Id),Amount from invest where MemberID = 1123931 and LoanId = loan_id'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'竞标成功'}"}
+2019-03-25 14:39:56,545-INFO-input_log.py-mylogger-37行-日志信息:投资之前用户可用余额是10000.00
+2019-03-25 14:39:56,915-INFO-input_log.py-mylogger-37行-日志信息:投资之后用户可用余额是9900.00
+2019-03-25 14:39:57,455-INFO-input_log.py-mylogger-37行-日志信息:invest模块第2条用例投资成功测试通过
+2019-03-25 14:39:57,845-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+2019-03-25 14:39:57,845-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:39:57,855-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:39:57,865-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第3条测试用例:不输入金额投资---
+2019-03-25 14:39:57,865-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'invest', 'Title': '不输入金额投资', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'1123931','password':'123456','loanId':'loan_id','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data':None, 'msg':'参数错误:所有参数都不能为空'}"}
+2019-03-25 14:39:57,945-INFO-input_log.py-mylogger-37行-日志信息:invest模块第3条用例不输入金额投资测试通过
+2019-03-25 14:39:58,405-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+2019-03-25 14:39:58,405-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:40:13,022-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:40:13,022-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 14:40:13,022-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 14:40:13,122-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-25 14:40:13,462-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 14:40:13,462-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:40:13,472-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:40:13,472-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-25 14:40:13,472-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'1123931','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = 1123931'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-25 14:40:13,852-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-03-25 14:40:14,272-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-03-25 14:40:14,272-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 14:40:14,282-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 14:40:14,282-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-25 14:40:14,282-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'loanId','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-25 14:40:14,372-INFO-input_log.py-mylogger-37行-日志信息:audit模块第3条用例审核到4状态测试通过
+2019-03-25 14:40:14,832-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2019-03-25 14:40:14,832-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 20:49:33,080-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 20:49:33,108-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 20:49:33,112-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 20:49:33,410-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 20:49:34,199-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 20:49:34,204-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-25 20:49:34,206-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-25 20:49:34,711-INFO-input_log.py-mylogger-37行-日志信息:充值之前用户可用余额是9900.00
+2019-03-25 20:49:35,146-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是10900.00
+2019-03-25 20:49:35,259-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:40:47,731-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:40:47,738-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 21:40:47,742-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 21:40:48,520-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 21:40:48,524-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:40:48,539-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:40:48,544-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-25 21:40:48,548-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-25 21:40:48,867-INFO-input_log.py-mylogger-37行-日志信息:充值之前用户可用余额是10900.00
+2019-03-25 21:40:49,480-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是11900.00
+2019-03-25 21:40:49,495-INFO-input_log.py-mylogger-37行-日志信息:recharge模块第2条用例正常充值测试不通过，不通过原因：{'sta[46 chars]31, 'leaveamount': 'leave_amount', 'mobilephon[139 chars]值成功'} != {'sta[46 chars]31, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59AB[135 chars]值成功'}
+  {'code': '10001',
+   'data': {'id': 1123931,
+-           'leaveamount': 'leave_amount',
++           'leaveamount': '11900.00',
+            'mobilephone': '18688777612',
+            'pwd': 'E10ADC3949BA59ABBE56E057F20F883E',
+            'regname': '小蜜蜂',
+            'regtime': '2019-03-12 11:58:09.0',
+            'type': '1'},
+   'msg': '充值成功',
+   'status': 1}
+2019-03-25 21:40:50,118-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:46:10,139-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:46:10,145-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 21:46:10,145-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 21:46:10,831-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 21:46:10,832-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:46:10,849-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:46:10,853-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-25 21:46:10,857-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-25 21:46:11,161-INFO-input_log.py-mylogger-37行-日志信息:充值之前用户可用余额是11900.00
+2019-03-25 21:46:11,577-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是12900.00
+2019-03-25 21:46:12,176-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:47:23,758-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:47:23,774-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 21:47:23,774-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 21:47:24,559-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 21:47:24,559-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:47:24,574-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:47:24,574-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-25 21:47:24,574-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-25 21:47:25,011-INFO-input_log.py-mylogger-37行-日志信息:充值之前用户可用余额是12900.00
+2019-03-25 21:47:25,574-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是13900.00
+2019-03-25 21:47:26,191-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:50:30,021-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:50:30,021-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 21:50:30,021-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 21:50:30,562-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 21:50:30,565-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:50:30,573-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:50:30,578-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-25 21:50:30,582-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-25 21:50:31,068-INFO-input_log.py-mylogger-37行-日志信息:充值之前用户可用余额是13900.00
+2019-03-25 21:50:31,811-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是14900.00
+2019-03-25 21:50:32,371-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:52:02,738-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:52:02,742-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 21:52:02,745-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 21:52:03,562-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 21:52:03,565-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:52:03,570-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:52:03,570-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-25 21:52:03,570-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-25 21:52:04,155-INFO-input_log.py-mylogger-37行-日志信息:充值之前用户可用余额是14900.00
+2019-03-25 21:52:04,854-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是15900.00
+2019-03-25 21:52:05,469-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:58:27,949-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:58:27,951-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 21:58:27,954-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 21:58:28,736-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 21:58:28,740-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 21:58:28,756-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 21:58:28,761-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-25 21:58:28,766-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-25 21:58:29,111-INFO-input_log.py-mylogger-37行-日志信息:充值之前用户可用余额是15900.00
+2019-03-25 21:58:29,778-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是16900.00
+2019-03-25 21:58:30,425-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 22:02:00,190-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 22:02:00,190-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 22:02:00,190-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 22:02:00,876-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 22:02:00,876-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 22:02:00,891-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 22:02:00,891-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-25 22:02:00,891-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-25 22:02:01,223-INFO-input_log.py-mylogger-37行-日志信息:充值之前用户可用余额是16900.00
+2019-03-25 22:02:01,628-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是17900.00
+2019-03-25 22:02:02,246-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 22:09:20,499-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 22:09:20,499-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-25 22:09:20,499-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'18688777612','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-25 22:09:21,145-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-25 22:09:21,149-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-25 22:09:21,169-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-25 22:09:21,178-INFO-input_log.py-mylogger-37行-日志信息:正在执行recharge模块第2条测试用例:正常充值---
+2019-03-25 22:09:21,182-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/recharge', 'Param': "{'mobilephone':'18688777612','amount':'1000'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688777612'}", 'ExpectedResult': "{'status':1,'code': '10001','data':{'id': 1123931,'leaveamount': 'leave_amount','mobilephone': '18688777612','pwd': 'E10ADC3949BA59ABBE56E057F20F883E','regname': '小蜜蜂','regtime': '2019-03-12 11:58:09.0','type': '1'},'msg': '充值成功','status': 1}"}
+2019-03-25 22:09:21,499-INFO-input_log.py-mylogger-37行-日志信息:充值之前用户可用余额是17900.00
+2019-03-25 22:09:21,999-INFO-input_log.py-mylogger-37行-日志信息:充值之后用户可用余额是18900.00
+2019-03-25 22:09:22,000-INFO-input_log.py-mylogger-37行-日志信息:recharge模块第2条用例正常充值测试通过
+2019-03-25 22:09:22,883-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': {'id': 1123931, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '18688777612', 'leaveamount': '18900.00', 'type': '1', 'regtime': '2019-03-12 11:58:09.0'}, 'msg': '充值成功'}
+2019-03-25 22:09:22,883-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-27 14:01:32,160-INFO-input_log.py-mylogger-37行-日志信息:请求参数中tel被替换成手机号18688909018
+2019-03-28 20:46:40,515-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:46:40,540-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 20:46:40,541-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 20:46:40,544-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:46:41,154-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:46:41,156-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 20:46:41,158-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 20:46:41,159-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:46:41,219-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:46:41,221-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 20:46:41,223-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loanId#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 20:46:41,226-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:46:41,278-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:46:41,280-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:46:41,281-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': None, 'ExpectedResult': None}
+2019-03-28 20:46:41,283-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:46:41,393-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:46:41,399-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:46:41,403-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': None, 'ExpectedResult': None}
+2019-03-28 20:46:41,405-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:46:41,511-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:46:41,513-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:46:41,514-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': ' ', 'ExpectedResult': None}
+2019-03-28 20:46:41,516-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:48:17,735-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:48:17,737-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 20:48:17,739-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 20:48:17,741-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:48:18,368-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:48:18,372-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 20:48:18,374-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 20:48:18,378-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:48:18,435-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:48:18,438-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 20:48:18,444-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loanId#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 20:48:18,447-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:48:18,529-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:48:18,532-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:48:18,534-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': None, 'ExpectedResult': None}
+2019-03-28 20:48:18,537-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:48:18,648-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:48:18,651-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:48:18,653-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': None, 'ExpectedResult': None}
+2019-03-28 20:48:18,654-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:48:18,763-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:48:18,765-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:48:18,767-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': ' ', 'ExpectedResult': None}
+2019-03-28 20:48:18,769-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:51:12,930-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:51:12,931-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 20:51:12,932-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 20:51:12,934-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:51:13,285-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:51:13,287-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 20:51:13,288-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 20:51:13,291-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:51:13,316-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:51:13,318-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 20:51:13,319-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 20:51:13,322-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:51:13,360-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:51:13,361-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:51:13,362-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': None, 'ExpectedResult': None}
+2019-03-28 20:51:13,364-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:51:13,427-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:51:13,429-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:51:13,431-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': None, 'ExpectedResult': None}
+2019-03-28 20:51:13,432-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:51:13,506-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:51:13,508-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:51:13,510-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': ' ', 'ExpectedResult': None}
+2019-03-28 20:51:13,511-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:55:28,142-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:55:28,144-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 20:55:28,145-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 20:55:28,148-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:55:28,613-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:55:28,616-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 20:55:28,618-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 20:55:28,621-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:55:28,666-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:55:28,668-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 20:55:28,669-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 20:55:28,671-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:55:28,720-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:55:28,721-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:55:28,724-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': None, 'ExpectedResult': None}
+2019-03-28 20:55:28,726-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:55:28,820-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:55:28,822-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:55:28,825-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': None, 'ExpectedResult': None}
+2019-03-28 20:55:28,826-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 20:55:28,962-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 20:55:28,965-INFO-input_log.py-mylogger-37行-日志信息:正在执行None模块第None条测试用例:None---
+2019-03-28 20:55:28,967-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': None, 'Module': None, 'Title': None, 'Method': None, 'Url': None, 'Param': None, 'sql': ' ', 'ExpectedResult': None}
+2019-03-28 20:55:28,968-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:04:51,055-ERROR-input_log.py-mylogger-41行-日志信息:invalid literal for int() with base 10: "'1123931'  # 用户ID"
+2019-03-28 21:04:51,431-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:04:51,435-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 21:04:51,437-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 21:04:51,441-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:04:52,153-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:04:52,155-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 21:04:52,157-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 21:04:52,160-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:04:52,616-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:04:52,619-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 21:04:52,622-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 21:04:52,625-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:05:01,620-ERROR-input_log.py-mylogger-41行-日志信息:invalid literal for int() with base 10: "'1123931'  # 用户ID"
+2019-03-28 21:05:01,959-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:05:01,961-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 21:05:01,964-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 21:05:01,967-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:05:02,617-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:05:02,619-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 21:05:02,621-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 21:05:02,623-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:05:02,835-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:05:02,836-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 21:05:02,837-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 21:05:02,839-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:08:38,019-ERROR-input_log.py-mylogger-41行-日志信息:invalid literal for int() with base 10: "'1123931'"
+2019-03-28 21:08:38,357-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:08:38,359-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 21:08:38,362-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 21:08:38,364-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:08:38,967-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:08:38,970-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 21:08:38,972-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 21:08:38,974-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:08:39,333-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:08:39,335-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 21:08:39,338-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 21:08:39,340-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:09:20,931-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:09:20,933-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 21:09:20,935-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 21:09:21,063-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-28 21:09:21,486-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-28 21:09:21,488-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:09:21,498-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:09:21,500-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 21:09:21,502-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 21:09:21,504-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:09:22,167-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:09:22,168-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 21:09:22,170-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 21:09:22,172-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:09:38,723-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:09:38,725-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 21:09:38,727-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 21:09:38,814-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-28 21:09:39,198-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-28 21:09:39,200-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:09:39,210-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:09:39,213-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 21:09:39,215-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 21:09:39,217-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:09:39,910-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:09:39,911-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 21:09:39,913-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 21:09:39,915-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:17:33,038-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:17:33,041-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 21:17:33,043-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 21:17:33,137-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-28 21:17:33,573-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-28 21:17:33,575-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:17:33,586-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:17:33,588-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 21:17:33,590-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 21:17:34,156-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:17:35,158-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:17:35,161-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 21:17:35,163-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 21:17:35,165-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:19:02,802-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:19:02,805-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 21:19:02,807-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 21:19:02,901-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-28 21:19:03,373-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-28 21:19:03,377-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:19:03,387-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:19:03,389-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 21:19:03,393-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 21:19:03,768-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-03-28 21:19:04,254-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-03-28 21:19:04,256-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:19:04,270-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:19:04,272-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 21:19:04,274-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 21:19:04,278-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:20:55,267-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:20:55,270-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-28 21:20:55,273-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-28 21:20:55,374-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-28 21:20:55,768-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-28 21:20:55,769-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:20:55,780-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:20:55,782-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-28 21:20:55,784-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-28 21:20:56,166-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-03-28 21:20:56,636-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-03-28 21:20:56,637-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-28 21:20:56,662-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-28 21:20:56,664-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-28 21:20:56,666-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-28 21:20:56,760-INFO-input_log.py-mylogger-37行-日志信息:audit模块第3条用例审核到4状态测试通过
+2019-03-28 21:20:57,207-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2019-03-28 21:20:57,208-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 13:26:53,421-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 13:26:53,443-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-29 13:26:53,445-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-29 13:26:53,577-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-29 13:26:54,078-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-29 13:26:54,080-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 13:26:54,092-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 13:26:54,093-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-29 13:26:54,095-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-29 13:26:54,478-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-03-29 13:26:55,060-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-03-29 13:26:55,064-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 13:26:55,079-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 13:26:55,082-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-29 13:26:55,086-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-29 13:26:55,175-INFO-input_log.py-mylogger-37行-日志信息:audit模块第3条用例审核到4状态测试通过
+2019-03-29 13:26:55,628-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2019-03-29 13:26:55,630-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 13:32:40,443-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 13:32:40,447-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-29 13:32:40,450-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-29 13:32:40,554-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-29 13:32:41,198-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-29 13:32:41,199-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 13:32:41,212-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 13:32:41,215-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-29 13:32:41,217-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-29 13:32:41,601-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-03-29 13:32:42,120-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-03-29 13:32:42,122-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 13:32:42,131-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 13:32:42,133-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-29 13:32:42,135-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-29 13:32:42,226-INFO-input_log.py-mylogger-37行-日志信息:audit模块第3条用例审核到4状态测试通过
+2019-03-29 13:32:42,645-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2019-03-29 13:32:42,646-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:04:30,173-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:04:30,174-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-29 15:04:30,176-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-29 15:04:30,264-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-29 15:04:30,747-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-29 15:04:30,749-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:04:30,752-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:04:30,754-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-29 15:04:30,755-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-29 15:04:31,134-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-03-29 15:04:31,568-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-03-29 15:04:31,569-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:04:31,571-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:04:31,572-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-29 15:04:31,574-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-29 15:04:31,660-INFO-input_log.py-mylogger-37行-日志信息:audit模块第3条用例审核到4状态测试通过
+2019-03-29 15:04:32,062-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2019-03-29 15:04:32,063-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:04:32,065-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:04:32,066-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-29 15:04:32,067-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-29 15:04:32,069-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:04:32,121-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:04:32,123-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第2条测试用例:投资成功---
+2019-03-29 15:04:32,124-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'invest', 'Title': '投资成功', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':'100.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = #mobile_phone#','sql_1':'select max(Id) from loan where MemberID = #member_id#','sql_2':'SELECT MAX(Id),Amount from invest where MemberID = #member_id# and LoanId = #loan_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'竞标成功'}"}
+2019-03-29 15:04:32,729-INFO-input_log.py-mylogger-37行-日志信息:投资之前用户可用余额是18900.00
+2019-03-29 15:04:33,136-INFO-input_log.py-mylogger-37行-日志信息:投资之后用户可用余额是18800.00
+2019-03-29 15:04:33,733-INFO-input_log.py-mylogger-37行-日志信息:invest模块第2条用例投资成功测试通过
+2019-03-29 15:04:34,222-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+2019-03-29 15:04:34,223-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:04:34,226-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:04:34,228-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第3条测试用例:不输入金额投资---
+2019-03-29 15:04:34,229-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'invest', 'Title': '不输入金额投资', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data':None, 'msg':'参数错误:所有参数都不能为空'}"}
+2019-03-29 15:04:34,231-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:13:53,777-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:13:53,779-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-29 15:13:53,782-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-29 15:13:53,874-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-29 15:13:54,356-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-29 15:13:54,358-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:13:54,359-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:13:54,362-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-03-29 15:13:54,364-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-03-29 15:13:54,740-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-03-29 15:13:55,230-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-03-29 15:13:55,243-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:13:55,245-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:13:55,246-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-03-29 15:13:55,248-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-03-29 15:13:55,338-INFO-input_log.py-mylogger-37行-日志信息:audit模块第3条用例审核到4状态测试通过
+2019-03-29 15:13:55,846-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2019-03-29 15:13:55,848-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:13:55,849-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:13:55,850-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-03-29 15:13:55,852-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-03-29 15:13:55,931-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-03-29 15:13:56,338-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-03-29 15:13:56,339-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:13:56,341-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:13:56,343-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第2条测试用例:投资成功---
+2019-03-29 15:13:56,345-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'invest', 'Title': '投资成功', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':'100.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = #mobile_phone#','sql_1':'select max(Id) from loan where MemberID = #member_id#','sql_2':'SELECT MAX(Id),Amount from invest where MemberID = #member_id# and LoanId = #loan_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'竞标成功'}"}
+2019-03-29 15:13:56,872-INFO-input_log.py-mylogger-37行-日志信息:投资之前用户可用余额是18800.00
+2019-03-29 15:13:57,302-INFO-input_log.py-mylogger-37行-日志信息:投资之后用户可用余额是18700.00
+2019-03-29 15:13:57,908-INFO-input_log.py-mylogger-37行-日志信息:invest模块第2条用例投资成功测试通过
+2019-03-29 15:13:58,414-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+2019-03-29 15:13:58,416-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-03-29 15:13:58,418-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-03-29 15:13:58,420-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第3条测试用例:不输入金额投资---
+2019-03-29 15:13:58,422-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'invest', 'Title': '不输入金额投资', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data':None, 'msg':'参数错误:所有参数都不能为空'}"}
+2019-03-29 15:13:58,507-INFO-input_log.py-mylogger-37行-日志信息:invest模块第3条用例不输入金额投资测试通过
+2019-03-29 15:13:58,947-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+2019-03-29 15:13:58,949-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:49:13,613-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:49:13,627-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-04-01 17:49:13,629-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-04-01 17:49:13,754-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-04-01 17:49:14,315-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-04-01 17:49:14,316-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:49:14,318-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:49:14,320-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-04-01 17:49:14,323-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-04-01 17:49:14,719-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-04-01 17:49:15,211-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-04-01 17:49:15,213-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:49:15,215-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:49:15,217-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-04-01 17:49:15,218-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-04-01 17:49:15,309-INFO-input_log.py-mylogger-37行-日志信息:audit模块第3条用例审核到4状态测试通过
+2019-04-01 17:49:15,793-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2019-04-01 17:49:15,795-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:49:15,797-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:49:15,799-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-04-01 17:49:15,805-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-04-01 17:49:15,887-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-04-01 17:49:16,375-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-04-01 17:49:16,378-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:49:16,380-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:49:16,382-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第2条测试用例:投资成功---
+2019-04-01 17:49:16,384-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'invest', 'Title': '投资成功', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':'100.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = #mobile_phone#','sql_1':'select max(Id) from loan where MemberID = #member_id#','sql_2':'SELECT MAX(Id),Amount from invest where MemberID = #member_id# and LoanId = #loan_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'竞标成功'}"}
+2019-04-01 17:49:16,943-INFO-input_log.py-mylogger-37行-日志信息:投资之前用户可用余额是18700.00
+2019-04-01 17:49:17,331-INFO-input_log.py-mylogger-37行-日志信息:投资之后用户可用余额是18600.00
+2019-04-01 17:49:17,926-INFO-input_log.py-mylogger-37行-日志信息:invest模块第2条用例投资成功测试通过
+2019-04-01 17:49:18,449-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+2019-04-01 17:49:18,450-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:49:18,452-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:49:18,454-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第3条测试用例:不输入金额投资---
+2019-04-01 17:49:18,456-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'invest', 'Title': '不输入金额投资', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data':None, 'msg':'参数错误:所有参数都不能为空'}"}
+2019-04-01 17:49:18,533-INFO-input_log.py-mylogger-37行-日志信息:invest模块第3条用例不输入金额投资测试通过
+2019-04-01 17:49:19,009-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+2019-04-01 17:49:19,011-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:51:52,322-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:51:52,324-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-04-01 17:51:52,327-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-04-01 17:51:52,422-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-04-01 17:51:52,986-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-04-01 17:51:52,988-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:51:52,990-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:51:52,992-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-04-01 17:51:52,994-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-04-01 17:51:53,368-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-04-01 17:51:53,818-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-04-01 17:51:53,820-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:51:53,822-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:51:53,823-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-04-01 17:51:53,824-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-04-01 17:51:53,910-INFO-input_log.py-mylogger-37行-日志信息:audit模块第3条用例审核到4状态测试通过
+2019-04-01 17:51:54,348-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2019-04-01 17:51:54,349-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:51:54,351-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:51:54,351-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-04-01 17:51:54,353-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-04-01 17:51:54,428-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-04-01 17:51:54,828-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-04-01 17:51:54,829-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:51:54,831-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:51:54,833-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第2条测试用例:投资成功---
+2019-04-01 17:51:54,836-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'invest', 'Title': '投资成功', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':'100.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = #mobile_phone#','sql_1':'select max(Id) from loan where MemberID = #member_id#','sql_2':'SELECT MAX(Id),Amount from invest where MemberID = #member_id# and LoanId = #loan_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'竞标成功'}"}
+2019-04-01 17:51:55,417-INFO-input_log.py-mylogger-37行-日志信息:投资之前用户可用余额是18600.00
+2019-04-01 17:51:55,807-INFO-input_log.py-mylogger-37行-日志信息:投资之后用户可用余额是18500.00
+2019-04-01 17:51:56,435-INFO-input_log.py-mylogger-37行-日志信息:invest模块第2条用例投资成功测试通过
+2019-04-01 17:51:56,899-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+2019-04-01 17:51:56,902-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:51:56,904-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:51:56,905-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第3条测试用例:不输入金额投资---
+2019-04-01 17:51:56,907-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'invest', 'Title': '不输入金额投资', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data':None, 'msg':'参数错误:所有参数都不能为空'}"}
+2019-04-01 17:51:56,987-INFO-input_log.py-mylogger-37行-日志信息:invest模块第3条用例不输入金额投资测试通过
+2019-04-01 17:51:57,435-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+2019-04-01 17:51:57,437-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:55:43,786-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:55:43,788-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-04-01 17:55:43,789-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-04-01 17:55:43,879-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-04-01 17:55:44,381-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-04-01 17:55:44,385-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:55:44,405-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:55:44,407-INFO-input_log.py-mylogger-37行-日志信息:正在执行add模块第2条测试用例:加标---
+2019-04-01 17:55:44,408-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add', 'Title': '加标', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/add', 'Param': "{'memberId':'#member_id#','title':'测试标0319','amount':'5000','loanRate':'10.0','loanTerm':'30','loanDateType':'0','repaymemtWay':'4','biddingDays':'10'}", 'sql': "{'sql':'select max(Id) from loan where MemberID = #member_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'加标成功'}"}
+2019-04-01 17:55:44,785-INFO-input_log.py-mylogger-37行-日志信息:add模块第2条用例加标测试通过
+2019-04-01 17:55:45,259-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2019-04-01 17:55:45,261-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:55:45,264-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:55:45,266-INFO-input_log.py-mylogger-37行-日志信息:正在执行audit模块第3条测试用例:审核到4状态---
+2019-04-01 17:55:45,268-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/loan/audit', 'Param': "{'id':'#loan_id#','status':'4'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'更新状态成功：竞标开始，当前标为竞标中状态'}"}
+2019-04-01 17:55:45,352-INFO-input_log.py-mylogger-37行-日志信息:audit模块第3条用例审核到4状态测试通过
+2019-04-01 17:55:45,825-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2019-04-01 17:55:45,826-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:55:45,830-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:55:45,832-INFO-input_log.py-mylogger-37行-日志信息:正在执行login模块第1条测试用例:正常登录---
+2019-04-01 17:55:45,833-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'Param': "{'mobilephone':'#mobile_phone#','pwd':'#pass_word#'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'登录成功'}"}
+2019-04-01 17:55:45,915-INFO-input_log.py-mylogger-37行-日志信息:login模块第1条用例正常登录测试通过
+2019-04-01 17:55:46,399-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2019-04-01 17:55:46,402-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:55:46,406-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:55:46,408-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第2条测试用例:投资成功---
+2019-04-01 17:55:46,412-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 2, 'Module': 'invest', 'Title': '投资成功', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':'100.00'}", 'sql': "{'sql':'select LeaveAmount from member where mobilephone = #mobile_phone#','sql_1':'select max(Id) from loan where MemberID = #member_id#','sql_2':'SELECT MAX(Id),Amount from invest where MemberID = #member_id# and LoanId = #loan_id#'}", 'ExpectedResult': "{'status':1,'code':'10001','data':None, 'msg':'竞标成功'}"}
+2019-04-01 17:55:46,980-INFO-input_log.py-mylogger-37行-日志信息:投资之前用户可用余额是18500.00
+2019-04-01 17:55:47,394-INFO-input_log.py-mylogger-37行-日志信息:投资之后用户可用余额是18400.00
+2019-04-01 17:55:47,988-INFO-input_log.py-mylogger-37行-日志信息:invest模块第2条用例投资成功测试通过
+2019-04-01 17:55:48,518-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+2019-04-01 17:55:48,519-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
+2019-04-01 17:55:48,523-INFO-input_log.py-mylogger-37行-日志信息:开始执行用例
+2019-04-01 17:55:48,525-INFO-input_log.py-mylogger-37行-日志信息:正在执行invest模块第3条测试用例:不输入金额投资---
+2019-04-01 17:55:48,526-INFO-input_log.py-mylogger-37行-日志信息:测试数据是：{'CaseId': 3, 'Module': 'invest', 'Title': '不输入金额投资', 'Method': 'post', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/bidLoan', 'Param': "{'memberId':'#member_id#','password':'#pass_word#','loanId':'#loan_id#','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data':None, 'msg':'参数错误:所有参数都不能为空'}"}
+2019-04-01 17:55:48,606-INFO-input_log.py-mylogger-37行-日志信息:invest模块第3条用例不输入金额投资测试通过
+2019-04-01 17:55:49,072-INFO-input_log.py-mylogger-37行-日志信息:实际结果：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+2019-04-01 17:55:49,074-INFO-input_log.py-mylogger-37行-日志信息:用例执行完毕
