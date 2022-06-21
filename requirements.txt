@@ -21,7 +21,7 @@ lxml==4.2.1
 more-itertools==4.1.0
 mysql-connector-python==8.0.15
 namedlist==1.7
-numpy==1.16.1
+numpy==1.22.0
 openpyxl==2.6.0
 pandas==0.24.1
 parsel==1.5.1
